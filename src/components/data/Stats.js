@@ -3,7 +3,7 @@ import { DollarSign, Eye, ShoppingCart, Users } from "lucide-react";
 const stats = [
     {
         title: "Total Revenue",
-        value: "$214,563",
+        value: "$114,563",
         change: "+12.5%",
         trend: "up",
         icon: DollarSign,
