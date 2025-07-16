@@ -32,7 +32,7 @@ const menuItem = [
     label: "Users",
     count: "2.4k",
     submenu: [
-      { id: "overview", label: "Overview" },
+      { id: "new", label: "New User" },
       { id: "overview", label: "Overview" },
       { id: "overview", label: "Overview" },
     ],
@@ -42,9 +42,9 @@ const menuItem = [
     icon: ShoppingBag,
     label: "E-Commerce",
     submenu: [
-      { id: "overview", label: "Overview" },
-      { id: "overview", label: "Overview" },
-      { id: "overview", label: "Overview" },
+      { id: "products", label: "Products" },
+      { id: "orders", label: "Orders" },
+      { id: "customers", label: "Customers" },
     ],
   },
   {

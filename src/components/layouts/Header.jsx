@@ -2,7 +2,7 @@ import { Bell, Filter, Menu, Plus, Search, Settings, Sun } from "lucide-react";
 import Head from '/jonathan.jpg'
 import React from "react";
 
-export const Header = () => {
+export const Header = ({collapsed, onToggle}) => {
   return (
     <div
       className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl 
@@ -15,7 +15,7 @@ export const Header = () => {
             className="p-2 rounded-lg text-slate-600 dark:text-slate-200 hover:bg-slate-100
            dark:hover:bg-slate-800 transition-colors"
           >
-            <Menu className="w-5 h-5" />
+            <Menu className="w-5 h-5" onClick={onToggle}/>
           </button>
 
           <div className="hidden md:block ">

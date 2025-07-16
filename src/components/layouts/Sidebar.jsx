@@ -21,7 +21,7 @@ export const Sidebar = ({ collapsed, onToggle, currentPage, onPageChange }) => {
     <div
       className={`${
         collapsed ? "w-20" : "w-72"
-      } transition duration-300 ease-in-out bg-white/80 
+      } transition-all duration-300 ease-in-out bg-white/80 
     dark:bg-slate-900/80 backdrop-blur-xl border-r border-slate-200/50 
     dark:border-slate-700/50 flex flex-col relative z-10`}
     >
@@ -88,19 +88,20 @@ export const Sidebar = ({ collapsed, onToggle, currentPage, onPageChange }) => {
                   )}
                 </div>
 
-                {!collapsed && item.submenu &&(
+                {!collapsed && item.submenu && (
                   <ChevronDown className="w-4 h-4 transition-transform" />
                 )}
               </button>
 
-              {!collapsed && item.submenu &&  expanded.has(item.id) && (
+              {!collapsed && item.submenu && expanded.has(item.id) && (
                 <div className="ml-8 mt-2 space-y-1">
                   {item.submenu.map((menu) => {
                     return (
                       <button
                         key={menu.id}
                         className="
-                    flex flex-col flex-1 p-2 font-medium text-sm"
+                          text-left w-full text-slate-600 dark:text-slate-400 hover:text-slate-800 
+                          dark:hover:text-slate-200 hover:bg-slate-100 dark:bg-slate-800/50 rounded-lg transition-all p-2 font-medium text-sm"
                       >
                         {menu.label}
                       </button>
